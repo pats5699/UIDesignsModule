@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".ProgressButton">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FF1100"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/DoubleBounce"
+            style="@style/SpinKitView.DoubleBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#2A3D50"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:SpinKit_Color="@color/white" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/Wave"
+            style="@style/SpinKitView.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00BB9C"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:SpinKit_Color="@color/white" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/WanderingCubes"
+            style="@style/SpinKitView.WanderingCubes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#227EBA"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:SpinKit_Color="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll1">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/Pulse"
+            style="@style/SpinKitView.Pulse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#7E8B8C"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            app:SpinKit_Color="@color/white" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/ChasingDots"
+            style="@style/SpinKitView.ChasingDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFCA5B"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            app:SpinKit_Color="@color/white" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/ThreeBounce"
+            style="@style/SpinKitView.ThreeBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FF1100"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            app:SpinKit_Color="@color/white" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/Circle"
+            style="@style/SpinKitView.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#19AE5D"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            app:SpinKit_Color="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@id/ll2">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/CubeGrid"
+            style="@style/SpinKitView.CubeGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FF1100"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            app:SpinKit_Color="@color/white" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/FadingCircle"
+            style="@style/SpinKitView.FadingCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#2A3D50"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            app:SpinKit_Color="@color/white" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/FoldingCube"
+            style="@style/SpinKitView.FoldingCube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00BB9C"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            app:SpinKit_Color="@color/white" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/RotatingCircle"
+            style="@style/SpinKitView.RotatingCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#227EBA"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            app:SpinKit_Color="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@id/ll3">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/MultiplePulse"
+            style="@style/SpinKitView.MultiplePulse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#7E8B8C"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            app:SpinKit_Color="@color/white" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/PulseRing"
+            style="@style/SpinKitView.PulseRing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFCA5B"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            app:SpinKit_Color="@color/white" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/MultiplePulseRing"
+            style="@style/SpinKitView.MultiplePulseRing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FF1100"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            app:SpinKit_Color="@color/white" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            app:SpinKit_Color="@color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/myProgressButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/circleProgress"
+            style="@style/SpinKitView.DoubleBounce"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:background="@drawable/login5_signin_button"
+            android:backgroundTint="@color/black"
+            android:elevation="3dp"
+            android:padding="6dp"
+            />
+
+        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+            android:id="@+id/circleProgressButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/login5_signin_button"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="Click Me"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            app:finalCornerAngle="50dp"
+            app:initialCornerAngle="50dp"
+            android:elevation="0dp"
+            app:spinning_bar_color="@color/white"
+            app:spinning_bar_padding="6dp"
+            app:spinning_bar_width="4dp" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/material_button"
+        layout="@layout/material_process_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/myProgressButton"
+        layout="@layout/progress_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

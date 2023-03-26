@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:id="@+id/dialogContainer"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/successDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/butoon_follow_background">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_dialog_text_background"
+            android:backgroundTint="@color/colorSuccess"
+            android:paddingHorizontal="20dp"
+            android:text="This is success title"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ic_done_24dp"
+            />
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Dummy Text"
+            android:layout_below="@+id/title"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnOkay"
+        android:layout_below="@id/successDialog"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background="@drawable/butoon_follow_background"
+        android:backgroundTint="@color/colorSuccess"
+        android:text="Button"
+        android:layout_marginTop="-20dp"
+        />
+
+
+</RelativeLayout>

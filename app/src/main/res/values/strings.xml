@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">UI Design</string>
+
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="login_now">Login Now</string>
+    <string name="don_t_remember_password">Don\'t Remember password?</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="or">or</string>
+    <string name="acc_drawer_open">Open navigation drawer</string>
+    <string name="acc_drawer_close">Close navigation drawer</string>
+    <string name="login4_text">Join our communityof 10+\nmillon people all over the world</string>
+
+    <string name="success_title">This is Success Title</string>
+    <string name="warning_title">This is Warning Title</string>
+    <string name="error_title">This is Error Title</string>
+    <string name="dummy_text">Lorem Ipsum is simply a dummy text of printing and typesetting industry</string>
+    <string name="okay">Okay</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

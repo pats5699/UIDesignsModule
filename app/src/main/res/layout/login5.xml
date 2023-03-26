@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Login5">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login5top"
+        android:scaleY="1.2" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvSubtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/bold"
+        android:text="FO CCY"
+        android:textColor="@color/white"
+        android:textIsSelectable="false"
+        android:textScaleX="1.22"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="We help you to live\nfeel free life from strees"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/btn_signin_facebook"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login5_signin_button"
+        android:fontFamily="@font/bold"
+        android:text="sign in"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/supportLL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:translationY="-00px"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/linlay"
+            android:translationY="-00px"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_cross"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/login5_signin_button"
+                android:fontFamily="@font/bold"
+                android:text="X"
+                android:textSize="26sp"
+                />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/login5_edit_text"
+                android:hint="EMAIL"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="19sp"
+                android:textStyle="normal"
+
+                />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/login5_edit_text"
+                android:inputType="textPassword"
+                android:hint="PASSWORD"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="19sp"
+                android:textStyle="normal"
+
+                />
+
+            <Button
+                android:id="@+id/btn_signin_2"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/login5_signin_button"
+                android:elevation="200dp"
+                android:fontFamily="@font/bold"
+                android:shadowColor="@color/black"
+                android:text="sign in "
+                android:textSize="19sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_signin_facebook"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/login5_signin_button"
+        android:backgroundTint="@color/dark_blue"
+        android:fontFamily="@font/bold"
+        android:text="sign in with facebook"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uidesign">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/noActionBar">
+        <activity android:name=".OTPVerification" />
+        <activity
+            android:name=".MyLiquidSwipe"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LottieAnimations"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ProgressButton" />
+        <activity
+            android:name=".ImageSlider"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CustomAlertDialog" />
+        <activity
+            android:name=".Login7"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login4_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Temp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DetailActivity" />
+        <activity
+            android:name=".SwipeCardViewPager"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Login3_1" />
+        <activity android:name=".Login3" />
+        <activity
+            android:name=".TabNavigationStrip"
+            android:theme="@style/noActionBar.2" />
+        <activity android:name=".Login2_1" />
+        <activity android:name=".Login2" />
+        <activity android:name=".ProfileDesign" />
+        <activity android:name=".InstaLogin" />
+        <activity
+            android:name=".RecyclerActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

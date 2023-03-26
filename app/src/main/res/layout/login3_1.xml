@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login3_1">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="Hello There!"
+            android:textColor="@color/login3_gray"
+            android:textSize="40sp"
+
+            />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login3_input_field"
+            android:hint="Email Address"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/login3_gray" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/login3_input_field"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/login3_gray"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_alignStart="@+id/ll1"
+        android:layout_alignEnd="@+id/ll1"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="162dp"
+            android:layout_height="53dp"
+            android:background="@drawable/login3_button"
+            android:fontFamily="@font/bold"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+
+            />
+
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/regular"
+            android:text="Need Help?"
+            android:gravity="end"
+            android:textColor="@color/login3_red"
+            android:textSize="16sp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/light"
+            android:text="You are not a member?"
+            android:textColor="@color/login3_gray"
+            android:textSize="16sp"
+
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/bold"
+            android:text="Register."
+            android:textColor="@color/login3_red"
+            android:textSize="16sp"
+
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        app:srcCompat="@drawable/back_arrow_30dp"
+
+        />
+
+</RelativeLayout>
